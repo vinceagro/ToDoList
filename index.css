@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.fa-list-ul {
+    margin: 10px;
+}
+
+.input {
+    width: auto;
+    text-align: center;
+    border: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: large;
+    border-radius: 1em;
+
+}
+
+#app-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 0;
+    justify-content: center;
+}
+
+.bodyToDo {
+    border: 5px solid black;
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    display: inline;
+}
+
+.container {
+    display: flex;
+    flex: 0 1;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid blue;
+    background-color: red;
+}
+
+.inputDiv {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.item {
+    display: flex;
+    flex: 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    padding: 20px;
+    border: 1px solid blue;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.divButtons {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.divButtons :not(:last-child) {
+    margin-right: 1rem;
+}
+
+.divInput {
+    display: flex;
+    flex: 3 20rem;
+}
+
+.divInput input {
+    width: 100%;
+    text-align: center;
+    border: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: large;
+    border-radius: 1em;
+}
+
+
+.buttons {
+    padding: 0.9rem;
+    margin: 0.2em;
+    border-radius: 1em;
+}
+
+.selected {
+    background-color: lightgray;
+    border: 1px solid darkgrey;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+}
+
+.current-container,
+.deleted-container {
+    flex: 1;
+}
