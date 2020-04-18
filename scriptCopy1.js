@@ -63,7 +63,8 @@ class Element {
             e.which === 13 ? check() : e != 13
         });
 
-        remove.addEventListener('click', () => this.remove(elementBox))
+        remove.addEventListener('click', this.remove)
+        // remove.addEventListener('click', () => this.remove(elementBox))
         checkbox.addEventListener('click', () => this.removeSelected(elementBox, allElements, checkbox))
 
         this.whatever = input;
@@ -75,6 +76,9 @@ class Element {
         input.parentNode.classList.toggle('selected');
 
 
+        {
+            this.
+        }
 
     }
     remove(elementBox) {
@@ -146,4 +150,4 @@ removeSelected.addEventListener('click', removeSelection);
 
 window.addEventListener('keydown', (e) => {
     e.which === 13 ? check() : e != 13
-})
+});
